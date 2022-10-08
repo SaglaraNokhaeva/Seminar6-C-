@@ -21,18 +21,18 @@ int[] massiv = new int[M];
 massiv=Input_mass(massiv);
 Console.Write(String.Join(",",massiv));
 
-int negativ_count=Get_negativ_count(massiv);
+int pozitiv_count=Get_pozitiv_count(massiv);
 Console.WriteLine();
-Console.WriteLine($"Количество отрицательных чисел = {negativ_count}");
+Console.WriteLine($"Количество положительных чисел = {pozitiv_count}");
 
 
-int Get_negativ_count(int[] massiv_local){
+int Get_pozitiv_count(int[] massiv_local){
     int i=0;
-    int negativ=0;
+    int pozitiv=0;
     for (i=0;i<massiv_local.Length;i++){
-      if (massiv_local[i]<0) negativ++;
+      if (massiv_local[i]>0) pozitiv++;
     }
-    return negativ;
+    return pozitiv;
 }
 
 int [] Input_mass(int[] massiv_local){
