@@ -12,7 +12,6 @@ while (num1>=2)
 {
     num1=num1/2;
     size++;
-    
 }
 int [] arr = new int [size];
 for (int i=0; i<size; i++)
