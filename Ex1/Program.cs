@@ -4,8 +4,9 @@
 //[6 7 3 6] -> [6 3 7 6]
 Console.Clear();  
 int [] array =FillArr(5,1,10);
-Console.WriteLine("[ "+ string.Join(",",array)+" ]");
-Console.WriteLine("[ "+ string.Join(",",ReversArr(array))+" ]");
+Console.WriteLine("Входной массив: "+"[ "+ string.Join(",",array)+" ]");
+Console.WriteLine("1-й способ:Перевернутый массив: "+"[ "+ string.Join(",",ReversArr(array))+" ]");
+Console.WriteLine("2-й способ:Перевернутый массив: "+"[ "+ string.Join(",",array.Reverse())+" ]");
 
 
 int [] FillArr(int size, int min, int max)
