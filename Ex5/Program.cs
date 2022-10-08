@@ -27,3 +27,20 @@ else
        second=k;
     }
 }
+/* Вторая версия
+
+Console.WriteLine();
+Console.Write("Введите число: ");
+int num2 = int.Parse(Console.ReadLine());
+
+int[] array = new int[num2];
+array[0] = 0;
+array[1] = 1;
+
+for (int i = 2; i < num2; i++)
+{
+array[i] = array[i-1] + array[i-2];
+}
+
+Console.WriteLine("Фибоначи: " + String.Join(", ", array));
+*/
